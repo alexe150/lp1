@@ -8,6 +8,30 @@ header{
 }
 .logo{
     margin-top: 20px;
+    position: relative;
+  animation: mymove,pulso 3s alternate 
+  
+
+
+}
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 10px;}
+  }
+
+@keyframes pulse {
+    15%{
+      transform: scale(1);
+    
+    }
+    40%{
+      transform: scale(1.2);
+    
+    }
+    80%{
+      transform: scale(1);
+    
+    }
 }
 .sociales{
     margin-top: -25px;
@@ -60,5 +84,6 @@ article{
 .imagen img:hover{
     transform: rotate(5deg) scale(1.2);
     filter: none;
+    filter:brightness(500%)
 }
 
